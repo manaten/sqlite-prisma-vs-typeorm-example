@@ -1,0 +1,11 @@
+{
+  "cSpell.words": ["lintstagedrc", "typecheck"],
+  "files.watcherExclude": {
+    "**/target": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
