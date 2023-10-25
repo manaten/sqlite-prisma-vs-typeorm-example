@@ -17,13 +17,11 @@ const user = new User({
 await AppDataSource.manager.save(user);
 console.log("Saved a new user with id: " + user.id);
 
-console.log("Loading users from the database...");
 console.log("Loaded users: ", await AppDataSource.getRepository(User).find());
 
-console.log("Loading older users from the database...");
 console.log(
   "Loaded older users: ",
   await AppDataSource.getRepository(User).findBy({
-    age: MoreThan(20),
+    age: MoreThan(30),
   }),
 );

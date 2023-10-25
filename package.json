@@ -10,8 +10,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:typeorm": "npm start -w packages/typeorm",
-    "start:prisma": "ts-node --esm --experimentalSpecifierResolution node src/prisma/index.ts",
+    "start:typeorm": "npm start -w packages/typeorm-sqlite-example",
+    "start:prisma": "npm start -w packages/prisma-sqlite-example",
     "clean": "rm -v *.sqlite",
     "typecheck": "npm run typecheck --workspaces",
     "prepare": "husky install",
@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "@faker-js/faker": "^8.2.0",
-    "@prisma/client": "^5.5.0",
     "sqlite3": "^5.1.6",
     "ts-node": "^10.9.1"
   },
