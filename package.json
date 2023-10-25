@@ -5,16 +5,24 @@
   "type": "module",
   "version": "1.0.0",
   "description": "manaten's ts-node cli script template.",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node --esm --experimentalSpecifierResolution node src/index.ts",
-    "typecheck": "tsc --noEmit",
+    "start:typeorm": "npm start -w packages/typeorm",
+    "start:prisma": "ts-node --esm --experimentalSpecifierResolution node src/prisma/index.ts",
+    "clean": "rm -v *.sqlite",
+    "typecheck": "npm run typecheck --workspaces",
     "prepare": "husky install",
     "lint-staged": "lint-staged -c .lintstagedrc",
     "fix": "eslint --fix ./**/*.{js,jsx,ts,tsx}",
     "prettier": "prettier --write --ignore-unknown ."
   },
   "dependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "@prisma/client": "^5.5.0",
+    "sqlite3": "^5.1.6",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {

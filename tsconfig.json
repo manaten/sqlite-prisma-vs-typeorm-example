@@ -12,7 +12,8 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "incremental": true,
-    "checkJs": true
+    "checkJs": true,
+    "sourceMap": true
   },
   "exclude": ["node_modules"]
 }

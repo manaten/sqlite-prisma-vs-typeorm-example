@@ -1,0 +1,16 @@
+{
+  "name": "typeorm",
+  "version": "0.0.1",
+  "description": "Awesome project developed with TypeORM.",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node --esm --experimentalSpecifierResolution node src/index.ts",
+    "typeorm": "typeorm-ts-node-esm",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "typeorm": "0.3.17",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2"
+  }
+}

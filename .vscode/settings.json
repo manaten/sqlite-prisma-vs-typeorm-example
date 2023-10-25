@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["lintstagedrc", "typecheck"],
+  "cSpell.words": ["lintstagedrc", "typecheck", "typeorm"],
   "files.watcherExclude": {
     "**/target": true
   },
